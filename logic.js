@@ -32,7 +32,7 @@ const generateBotResponse = async (inComingMessage) => {
     try {
         const response = await fetch(API_URL, requestOptions);
         const data = await response.json();
-
+        console.log(data)
         if (!response.ok) throw new Error(data.error.message);
 
         const api_response_text = cleanText(

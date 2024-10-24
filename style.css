@@ -90,7 +90,7 @@ body {
     flex-direction: column;
     gap: 15px;
     height: 460px;
-    /* margin-bottom: 80px; */
+    margin-bottom: 80px;
     overflow-y: auto;
 }
 
