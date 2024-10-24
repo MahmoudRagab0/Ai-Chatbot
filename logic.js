@@ -98,6 +98,10 @@ message_input.addEventListener("keydown", (e) => {
     const user_message = e.target.value.trim();
     if (e.key === "Enter" && user_message) {
         handleOutgoingMessage(e);
+        chat_body.scrollTo({
+            top: chat_body.scrollHeight,
+            behavior: "smooth",
+        });
     }
 });
 
